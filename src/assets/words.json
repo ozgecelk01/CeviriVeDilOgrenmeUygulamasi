@@ -1,0 +1,14 @@
+[
+  { "id": "1", "word": "abandon", "meaning": "terk etmek" },
+  { "id": "2", "word": "ability", "meaning": "yetenek" },
+  { "id": "3", "word": "abundant", "meaning": "bol, bereketli" },
+  { "id": "4", "word": "accurate", "meaning": "doğru, kesin" },
+  { "id": "5", "word": "achieve", "meaning": "başarmak" },
+  { "id": "6", "word": "acknowledge", "meaning": "kabul etmek" },
+  { "id": "7", "word": "adapt", "meaning": "uyum sağlamak" },
+  { "id": "8", "word": "adjust", "meaning": "ayarlamak" },
+  { "id": "9", "word": "affect", "meaning": "etkilemek" },
+  { "id": "10", "word": "afford", "meaning": "gücü yetmek" },
+  { "id": "11", "word": "alert", "meaning": "uyanık, dikkatli" },
+  { "id": "12", "word": "amplify", "meaning": "artırmak, genişletmek" }
+]

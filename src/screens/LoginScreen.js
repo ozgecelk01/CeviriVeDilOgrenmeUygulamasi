@@ -4,18 +4,24 @@ import { TextInput, Button, Text } from 'react-native-paper';
 import axios from 'axios';
 
 export default function LoginScreen({ navigation }) {
-  const [email, setEmail] = useState('ozgecelk01@gmail.com');
-  const [password, setPassword] = useState('123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
+  const handleLogin = async () => {
+    try {
+      const response = await axios.post('http://localhost:5000/api/auth/login', {
+        email,
+        password
+      });
 
-  const handleLogin = () => {
-  if (email === 'ozgecelk01@gmail.com' && password === '123') {
-    Alert.alert("Success", "Login successful");
-    navigation.navigate('Home');
-  } else {
-    Alert.alert("Login Failed", "Invalid email or password");
-  }
-};
+      if (response.status === 200) {
+        Alert.alert("Success", "Login successful");
+        navigation.navigate('Home');
+      }
+    } catch (error) {
+      Alert.alert("Login Failed", error.response?.data?.message || "An error occurred");
+    }
+  };
 
   return (
     <View style={styles.container}>
